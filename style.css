@@ -14,6 +14,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+#listaAmigos {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha se a lista for muito grande */
+    gap: 8px;        /* Espaço entre os itens */
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 24px 0 16px 0; /* Aumenta a margem superior para 24px */
+}
 
 body {
     height: 100vh;
@@ -90,7 +98,7 @@ body {
 
 .amigo-sorteado {
     font-family: "Inter", serif;
-    font-size: 24px;
+    font-size: 20px;
     color: red;
     font-weight: bold;
     text-align: center;

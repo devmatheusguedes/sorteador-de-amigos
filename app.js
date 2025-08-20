@@ -53,6 +53,8 @@ function sortearAmigo(){
     }
 }
 
+// faça a parte de reiniciar e também fazer algo em relação ao usuario que sorteia todos os nomes e quer adicionar mais amigos. talves deixar o botão adicionar desabilitado até reiniciar ou colocar um botão de adicionar mais amigos
+
 function sucessoResultado(amigoSecreto){
     document.getElementById("resultado").classList.remove("result-list-vazia");
     document.getElementById("resultado").classList.add("result-list");
@@ -63,12 +65,11 @@ function mostrarResultado(mensagem){
     document.getElementById("resultado").innerHTML = mensagem;
 }
 
-function mostrarListaAmigos(classList){
-
+function mostrarListaAmigos() {
     let lista = document.getElementById("listaAmigos");
     lista.innerHTML = ""; // Limpa a lista antes de exibir os amigos
-    for(let i = 0; i< amigos.length; i++){
-        lista.innerHTML += `<li>${amigos[i]}</li>`;
+    for (let i = 0; i < amigos.length; i++) {
+        lista.innerHTML += `<li data-nome="${amigos[i]}">${amigos[i]} -</li>`;
     }
 }
 
@@ -85,20 +86,19 @@ function sortear(){
     return amigos[numeroAleatorio];
 }
 
-function destacarAmigoSorteado(amigo){
+function destacarAmigoSorteado(amigo) {
     let lista = document.getElementById("listaAmigos");
     let itens = lista.getElementsByTagName("li");
-    for(let i = 0; i < itens.length; i++){
-        if(itens[i].textContent === amigo){
-            itens[i].classList.add("amigo-sorteado"); // Adiciona uma classe para destacar o amigo sorteado
+    for (let i = 0; i < itens.length; i++) {
+        if (itens[i].getAttribute("data-nome") === amigo) {
+            itens[i].classList.add("amigo-sorteado");
         }
     }
-
 }
 
 function erroListaAmigosVazia(){
     document.getElementById("resultado").classList.remove("result-list");
     document.getElementById("resultado").classList.add("result-list-vazia");
     mostrarResultado("Adicione pelo menos dois amigos para sortear.");
-}
+    }
 

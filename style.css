@@ -70,6 +70,15 @@ body {
     text-align: center;
 }
 
+.section-subtitle {
+    font-family: "Inter", serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
 /* Contêineres de entrada e botão */
 .input-wrapper {
     display: flex;

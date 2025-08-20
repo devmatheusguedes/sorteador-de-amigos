@@ -68,9 +68,8 @@
 
 - <span style="color: #e67e22;">🎁 Inserção dinâmica de nomes</span>  
 - <span style="color: #c0392b;">⚠️ Validação para listas não vazias</span>  
-- <span style="color: #2980b9;">🎲 Sorteio aleatório com pares exclusivos</span>  
 - <span style="color: #16a085;">➡️ Revelação de um amigo secreto por vez</span>  
-- <span style="color: #d35400;">🔄 Reinício sem recarregar a página</span>
+
 
 ---
 

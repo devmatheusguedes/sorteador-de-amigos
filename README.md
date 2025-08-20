@@ -51,10 +51,15 @@
 ---
 
 ## <span style="color: #2ecc71; font-family: 'Georgia', serif;">🔍 Demonstração</span>
-
 <p align="center">
   <span style="color: #2c3e50; font-family: 'Arial', sans-serif;">
-    Abra o <code>index.html</code> no navegador e veja o sorteio em ação!
+    Você pode abrir o arquivo index.htm no navegador para ver o site funcionando
+  </span>
+</p>
+  <h1>ou<h1/>
+<p align="center">
+  <span style="color: #2c3e50; font-family: 'Arial', sans-serif;">
+    Abra o link <link>https://vercel.com/devmatheusguedes-projects/amigo-secreto<link/> no navegador e veja o sorteio em ação!
   </span>
 </p>
 
